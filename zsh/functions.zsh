@@ -53,6 +53,12 @@ lpj() {
     cd "$dir"
 }
 
+## Jump to School-subject
+lfs() {
+    local dir
+    dir=$(fd . ~/skole --type d --max-depth 2 | fzf) || return
+    cd "$dir"
+}
 
 ## Find Aliases
 fap(){

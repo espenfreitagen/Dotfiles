@@ -1,4 +1,5 @@
 # ENV-Variables
+export PATH=$PATH:~/.local/bin
 HISTFILE=~/.config/zsh/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
@@ -41,7 +42,10 @@ source "${HOME}"/.config/zsh/alias.zsh
 source "${HOME}"/.config/zsh/functions.zsh
 
 # Added by Quartus Prime software
-export QSYS_ROOTDIR="/home/espen/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/25.1/quartus/sopc_builder/bin"
+#export QSYS_ROOTDIR="/home/espen/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/25.1/quartus/sopc_builder/bin"
 #export SALT_LICENSE_FILE="$SALT_LICENSE_FILE;/home/espen/.altera.quartus/questa_lic.dat"
-export SALT_LICENSE_FILE="/home/espen/.altera.quartus/questa_lic.dat"
-export SALT_LICENSE_SERVER="/home/espen/.altera.quartus/questa_lic.dat"
+#export SALT_LICENSE_FILE="/home/espen/.altera.quartus/questa_lic.dat"
+#export SALT_LICENSE_SERVER="/home/espen/.altera.quartus/questa_lic.dat"
+
+autoload -Uz promptinit
+promptinit

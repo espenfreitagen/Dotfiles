@@ -1,2 +1,2 @@
-#require("black")
+--require("black")
 require("graphite")
