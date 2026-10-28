@@ -1,7 +1,10 @@
+# ZSH
+zup='source ~/dotfiles/zsh/.zshrc'
+
 # NEOVIM
 alias nv='nvim .'
 
-# GREP
+# COLORS
 alias grep='grep --color=auto'
 
 # CD
@@ -33,3 +36,6 @@ alias error='journalctl -b -p err'
 
 # MISC
 alias kbl='hyprctl switchxkblayout tuxedo-keyboard next'
+alias ubuntu='distrobox enter quartus'
+alias ctfenv='source ~/dev/ctf/.venv/bin/activate'
+alias fe='nnn -a -P p'

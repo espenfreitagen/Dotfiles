@@ -38,20 +38,9 @@ keymap("n", "<leader>xc", "<cmd>!./a.out %<CR>")
 
 keymap("n", "<leader>n", "<cmd>nohl<CR>")
 
--- Diagnostics
-keymap("n", "<leader>l", vim.diagnostic.open_float, {
-    desc = "Show diagnostic",
-})
-
--- Compiler --
--- Open compiler
-vim.api.nvim_set_keymap('n', '<F6>', "<cmd>CompilerOpen<cr>", { noremap = true, silent = true })
-
--- Redo last selected option
-vim.api.nvim_set_keymap('n', '<S-F6>',
-     "<cmd>CompilerStop<cr>" -- (Optional, to dispose all tasks before redo)
-  .. "<cmd>CompilerRedo<cr>",
- { noremap = true, silent = true })
-
--- Toggle compiler results
-vim.api.nvim_set_keymap('n', '<S-F7>', "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true })
+keymap("n", "gd", vim.lsp.buf.definition, { buffer = bufnr })
+keymap("n", "gi", vim.lsp.buf.implementation)
+keymap("n", "gr", vim.lsp.buf.references, { buffer = bufnr })
+keymap("n", "K", vim.lsp.buf.hover, { buffer = bufnr })
+keymap("n", "<leader>rn", vim.lsp.buf.rename, { buffer = bufnr })
+keymap("n", "<leader>ca", vim.lsp.buf.code_action, { buffer = bufnr })

@@ -41,11 +41,14 @@ zinit light Aloxaf/fzf-tab
 source "${HOME}"/.config/zsh/alias.zsh
 source "${HOME}"/.config/zsh/functions.zsh
 
-# Added by Quartus Prime software
-#export QSYS_ROOTDIR="/home/espen/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/25.1/quartus/sopc_builder/bin"
-#export SALT_LICENSE_FILE="$SALT_LICENSE_FILE;/home/espen/.altera.quartus/questa_lic.dat"
-#export SALT_LICENSE_FILE="/home/espen/.altera.quartus/questa_lic.dat"
-#export SALT_LICENSE_SERVER="/home/espen/.altera.quartus/questa_lic.dat"
-
 autoload -Uz promptinit
 promptinit
+
+# NNN
+export NNN_FIFO=/tmp/nnn.fifo nnn
+export NNN_PLUG='p:preview-tui'
+export NNN_SPLIT='v'
+export NNN_SPLITSIZE=40
+export NNN_PREVIEWIMGPROG='icat'
+#export NNN_PLUG='p:preview-tui'
+

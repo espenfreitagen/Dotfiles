@@ -1,5 +1,4 @@
 # FZF
-
 ## FZF_DEFAULT_OPTS
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --preview="bat --color=always {}"
@@ -68,7 +67,6 @@ fap(){
 }
 
 # Python
-
 ## Activate venv or create if nonexisting 
 venvme() {
   local venv_dir=".venv"

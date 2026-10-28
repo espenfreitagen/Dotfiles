@@ -29,3 +29,5 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 vim.g.markdown_folding = 1
 vim.opt.conceallevel = 1
+
+vim.opt.completeopt = { "menuone", "noselect", "popup" }
